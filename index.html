@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header js-header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo-link">
+        <h1 class="logo js-title">Where in the world?</h1>
+      </a>
+
+      <!-- Darkmode btn -->
+      <button class="darkmode-btn js-darkmodeBtn">
+        <img class="btn-img" src="./img/moon.svg" alt="">
+        <span class="btn-text js-text">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main js-main">
+    <div class="container">
+
+      <!-- Input with select -->
+      <div class="insel">
+        <div class="input-wrapper">
+          <input class="input js-input" type="search" placeholder="Search for a country...">
+          <img class="input-img" src="./img/search-icon.svg" alt="search-icon">
+        </div>
+
+        <select class="select js-select">
+          <option selected disabled>Filter by Region</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Europe">Europe</option>
+          <option value="Asia">Asia</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+
+      <!-- Loader -->
+      <div id="loader" class="loader-container">
+        <div class="loader"></div>
+        <div class="loader-text">Loading...</div>
+      </div>
+
+
+      <!-- Country list -->
+      <ul class="country-list"></ul>
+    </div>
+  </main>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
