@@ -353,4 +353,8 @@ body {
     padding: 14px 60px 14px 24px;
     width: 200px;
   }
+
+  .loader-container{
+    height: 50vh;
+  }
 }
